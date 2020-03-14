@@ -63,4 +63,4 @@ app.post("/imageurl", (req, res) => { image.handleApiCall(req, res)})
 
 
 
-app.listen(3000, () => console.log("started"))
+app.listen(process.env.PORT || 3000, () => console.log("started"))
